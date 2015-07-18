@@ -1,0 +1,17 @@
+parameters:
+    mailing_connector.manager.class: coolfarmer\MailingConnectorBundle\MailingConnectorManager
+    mailing_connector.manager.sendinblue.class: coolfarmer\MailingConnectorBundle\Manager\Sendinblue\SendinblueManager
+    mailing_connector.manager.campaigncommander.class: coolfarmer\MailingConnectorBundle\Manager\CampaignCommander\CampaignCommanderManager
+
+services:
+    mailing_connector.sending_blue:
+        class: %mailing_connector.manager.sendinblue.class%
+        arguments: [ %mailing_connector.sendinblue.api_key%, %mailing_connector.sendinblue.api_server% ]
+
+    mailing_connector.campaign_commander:
+        class: %mailing_connector.manager.campaigncommander.class%
+        arguments: [ %mailing_connector.campaigncommander.login%, %mailing_connector.campaigncommander.password%,%mailing_connector.campaigncommander.key%, %mailing_connector.campaigncommander.server% ]
+
+    mailing_connector:
+        class: %mailing_connector.manager.class%
+        arguments: [%default_mailing_manager%]
