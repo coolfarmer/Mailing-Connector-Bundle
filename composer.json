@@ -1,11 +1,11 @@
 {
   "name": "coolfarmer/mailing-connector",
-  "description": "Make easy to connect to a multiple third-party newsletter manager.",
+  "description": "Make easy to connect on multiple third-party newsletter manager.",
   "license": "proprietary",
   "require": {
     "php": ">=5.4.0",
     "star/collection": "~1.0",
-    "coolfarmer/campaign-commander": "dev-master",
+    "coolfarmer/campaign-commander": "~1.0",
     "mailin-api/mailin-api-php": "dev-master",
     "symfony/framework-bundle": "~2.7",
     "symfony/dependency-injection": "~2.7"
