@@ -14,8 +14,8 @@
     "phpunit/phpunit": "~4.0"
   },
   "autoload": {
-    "psr-0": {
-      "coolfarmer\\MailingConnectorBundle": ""
+    "psr-4": {
+      "coolfarmer\\MailingConnectorBundle\\": ""
     }
   },
   "authors": [
