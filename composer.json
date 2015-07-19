@@ -1,5 +1,5 @@
 {
-  "name": "coolfarmer/mailing-connector",
+  "name": "coolfarmer/mailing-connector-bundle",
   "description": "Make easy to connect on multiple third-party newsletter manager.",
   "license": "proprietary",
   "require": {
@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-0": {
-      "coolfarmer\\MailingConnectorBundle": "Coolfarmer"
+      "coolfarmer\\MailingConnectorBundle": ""
     }
   },
   "authors": [

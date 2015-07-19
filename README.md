@@ -13,7 +13,7 @@ If not using packagist, add the git repository to your composer file.
     "repositories": [
         {
             "type": "vcs",
-            "url":  "ssh://git@stash.bitbucket.lan:7999/components/mailing-connector.git"
+            "url":  "git@github.com:coolfarmer/Mailing-Connector-Bundle.git"
         }
     ]
     ...
