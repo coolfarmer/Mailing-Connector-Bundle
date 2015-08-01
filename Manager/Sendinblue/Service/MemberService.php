@@ -137,8 +137,8 @@ class MemberService implements MemberServiceInterface
     {
         $member = MemberFactory::create($response['data']['email']);
         $member
-            ->setFirstName($response['data']['attributes']['PRENOM'])
-            ->setLastName($response['data']['attributes']['NOM']);
+            ->setFirstName($response['data']['attributes']['FIRSTNAME'])
+            ->setLastName($response['data']['attributes']['LASTNAME']);
 
         if (null !== $response['data']['entered']) {
             $member->setDateSubscribe(new \DateTime($response['data']['entered']));
