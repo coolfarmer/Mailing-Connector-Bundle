@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca6159fb29d291b9d306e63145631adb",
+    "hash": "4d520231f229ce5ae2f2e12d35b8da0b",
+    "content-hash": "36d6450682b0c67da34dbba8f0ed3701",
     "packages": [
         {
             "name": "ass/xmlsecurity",
@@ -193,7 +194,7 @@
         },
         {
             "name": "coolfarmer/campaign-commander",
-            "version": "dev-master",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coolfarmer/Campaign-Commander.git",
@@ -438,22 +439,27 @@
         },
         {
             "name": "mailin-api/mailin-api-php",
-            "version": "dev-master",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mailin-api/mailin-api-php.git",
-                "reference": "52dcb7691b3540c78e114c416adeab7e37e668ef"
+                "reference": "0972fadd2ec41c0b15e0319b816548655c1238ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mailin-api/mailin-api-php/zipball/52dcb7691b3540c78e114c416adeab7e37e668ef",
-                "reference": "52dcb7691b3540c78e114c416adeab7e37e668ef",
+                "url": "https://api.github.com/repos/mailin-api/mailin-api-php/zipball/0972fadd2ec41c0b15e0319b816548655c1238ef",
+                "reference": "0972fadd2ec41c0b15e0319b816548655c1238ef",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Sendinblue": "src/"
@@ -471,7 +477,7 @@
             ],
             "description": "Official SendinBlue provided API V2 wrapper",
             "homepage": "https://github.com/mailin-api/mailin-api-php",
-            "time": "2015-03-30 10:42:19"
+            "time": "2015-09-08 11:49:00"
         },
         {
             "name": "psr/log",
@@ -2407,10 +2413,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "coolfarmer/campaign-commander": 20,
-        "mailin-api/mailin-api-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
