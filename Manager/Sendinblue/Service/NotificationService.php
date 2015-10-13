@@ -56,13 +56,16 @@ class NotificationService implements NotificationServiceInterface
         $attachment = array();
 
         $this->service->send_transactional_template(
-            $tEmail->getTemplateId(),
-            $to,
-            $cc,
-            $bcc,
-            $attributes,
-            $attachmentUrl,
-            $attachment
+            array(
+                'id' => $tEmail->getTemplateId(),
+                'to' => $to,
+                'cc' => $cc,
+                'bcc' => $bcc,
+                'attr' => $attributes,
+                'attachment_url' => $attachmentUrl,
+                'attachment' => $attachment,
+                'headers' => array(),
+            )
         );
     }
 
