@@ -63,12 +63,14 @@ class MemberService implements MemberServiceInterface
         }
 
         $this->service->create_update_user(
-            $member->getEmail(),
-            $attributes,
-            0,
-            array(),
-            array(),
-            0
+            array(
+                'email' => $member->getEmail(),
+                'attributes' => $attributes,
+                'blacklisted' => 0,
+                'listid' => array(),
+                'listid_unlink' => array(),
+                'blacklisted_sms' => 0,
+            )
         );
     }
 
@@ -99,12 +101,14 @@ class MemberService implements MemberServiceInterface
 
         // Blacklist user
         $this->service->create_update_user(
-            $email,
-            array(),
-            1,
-            array(),
-            array(),
-            1
+            array(
+                'email' => $email,
+                'attributes' => array(),
+                'blacklisted' => 1,
+                'listid' => array(),
+                'listid_unlink' => array(),
+                'blacklisted_sms' => 1,
+            )
         );
     }
 
